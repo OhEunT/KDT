@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(".work").slide({
+        panel : ".panel",
+        navi : ".pager",
+        type : "fade"
+      })
+    })
+  </script>
+</head>
+<body>
+  <div id="intro">
+    <div class="intro_txt">
+      <span id="typed"></span>
+    </div>
+    <button class="btn_scroll" type="button" name="button">Scroll Down</button>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="#">Oh Eun Teak</a>
+      </h1>
+    </header>
+    <div id="container">
+      <div class="indicate">
+        <ul>
+          <li>
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">My Project</a>
+          </li>
+          <li>
+            <a href="#">Student Work</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="menu1" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">01</span>
+                <span class="txt">About Me</span>
+              </h2>
+              <ul>
+                <li>Profile</li>
+                <li>Skiis</li>
+              </ul>
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <div class="profile">
+                <h3>Profile</h3>
+                <div class="profile_box">
+                  <p class="img_box">
+                    <img src="./img/profile.jpg" alt="profile">
+                  </p>
+                  <ul>
+                    <li>
+                      <span class="p_tit ko">이름</span>
+                      <span class="p_desc">오 은택</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">나이</span>
+                      <span class="p_desc">37 (1987.06)</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">번호</span>
+                      <span class="p_desc">010-3382-0644</span>
+                    </li>
+                    <li>
+                      <span class="p_tit ko">이메일</span>
+                      <span class="p_desc">giloet777@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                  <li>HTML, CSS3, jQuery &amp; javascript, React.js</li>
+                  <li>Counseling, Facilitator, Presentation, Storytelling</li>
+                  <li class="ko"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">02</span>
+                <span class="txt">My Project</span>
+              </h2>
+              <ul>
+                <li>Delivery</li>
+                <li>HTML ver</li>
+              </ul>
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <!-- 포토폴리오 작업물 -->
+              <div class="work">
+                <div class="pager">
+                  <ul>
+                    <li>
+                      <a href="#">Delivery</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML ver</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="panel">
+                  <ul>
+                    <!-- 휴비스 반응형 작업물 -->
+                    <li class="work_01">
+                      <h4>Delivery</h4>
+                      <div class="work_img">
+                        <img src="./img/project.png" alt="">
+                      </div>
+                      <div class="work_txt">
+                        <ul>
+                          <li>
+                            <span class="work_tit ko">웹싸이트 제작방식</span>
+                            <span class="work_date">React.js</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">사용된 라이브러리</span>
+                            <span class="work_date">Redux, Redux-saga상태관리</span>
+                            <span class="work_date">axios API도구</span>
+                            <span class="work_date">Sass css전처리, Swiper.js 슬라이드 </span>
+                            
+                          </li>
+                          <li>
+                            <span class="work_tit ko">구성</span>
+                            <span class="work_date">Main, 회사소개, 투두리스트방식의 자유게시판</span>
+                            <span class="work_date">flickr API를사용한 갤러리, Youtube API를 사용한 유튜브</span>
+                            <span class="work_date">kakao map API를 적용한 찾아오시는길</span>
+                            <span class="work_date"> 하드코딩으로 작성한 회원가입페이지</span>
+
+                          </li>
+                          <li class="work_skill">
+                            <span class="work_tit ko">주요스킬</span>
+                            <ul>
+                              <li>React hook을 이용한 페이지제작</li>
+                              <li>Redux,saga를 사용한 상태관리</li>
+                              <li>Swiper.js 등 외부 라이브러리 사용방법</li>
+                            </ul>
+                          </li>
+                          <li class="work_desc">
+                            <span class="work_tit ko">설명</span>
+                            <p class="ko">
+                              React강의에 포함될 내용들을 모아서 제작한 개인프로젝트입니다. <br>
+                              작업물을 보시려면 문의주세요.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- <div class="work_links">
+                        <a class="ko" href="#">작업 과정 바로가기</a>
+                        <a class="ko" href="#">작업물 바로가기</a>
+                      </div> -->
+                    </li>
+                    <!-- 포트폴리오 사이트 작업물 -->
+                    <li class="work_02">
+                      <h4>HTML ver</h4>
+                      <div class="work_img">
+                        <img src="./img/project2.png" alt="">
+                      </div>
+                      <div class="work_txt">
+                        <ul>
+                          <li>
+                            <span class="work_tit ko">뷰포트</span>
+                            <span class="work_date">Responsive</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">CSS전처리기</span>
+                            <span class="work_date">SASS사용</span>
+                          </li>
+                          <li>
+                            <span class="work_tit ko">구성</span>
+                            <span class="work_date">Main</span>
+                            <span class="work_date">회사소개페이지</span>
+                            <span class="work_date">유튜브페이지</span>
+                            <span class="work_date">자유게시판 페이지만</span>
+                            <span class="work_date">flickr 갤러리페이지</span>
+                            <span class="work_date">kakao map 오시는길</span>
+                            <span class="work_date">회원가입페이지</span>
+                          </li>
+                          <li class="work_skill">
+                            <span class="work_tit ko">스킬</span>
+                            <ul>
+                              <li>html5</li>
+                              <li>css3(전처리기 사용)</li>
+                              <li>javaScript</li>
+                            </ul>
+                          </li>
+                          <li class="work_desc">
+                            <span class="work_tit ko">설명</span>
+                            <p class="ko">
+                              html 버전입니다. <br>
+                              기본 기업형 웹페이지를 만드는 틀을 배우며,
+                              컨텐츠들(탭메뉴, 슬라이드, 스크롤등)은 따로 배웁니다.
+                              잦은 실습과 테스트를 거쳐 html,css사용 방식을 익히고 
+                              이후 스스로 디자인하여 html버전 프로젝트를 만들도록 합니다.
+                              작업물을 보시려면 문의주세요.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- <div class="work_links">
+                        <a class="ko" href="#">작업 과정 바로가기</a>
+                        <a class="ko" href="#">작업물 바로가기</a>
+                      </div> -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu3" class="menu">
+          <div class="menu_box">
+            <a href="#">
+              <h2 class="tit">
+                <span class="num">03</span>
+                <span class="txt">Student Work</span>
+              </h2>
+              <!-- <ul>
+                <li></li>
+                <li>Sned E-Mail</li>
+              </ul> -->
+              <span class="more">More</span>
+              <span class="back">Back</span>
+            </a>
+          </div>
+          <div class="list_box">
+            <div class="scroll_box">
+              <!-- 포토폴리오 작업물 -->
+              <div class="work">
+                <!-- <div class="pager">
+                  <ul>
+                    <li>
+                      <a href="#">Delivery</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML ver</a>
+                    </li>
+                  </ul>
+                </div> -->
+                <div class="pjt">
+                  <div class="inner">
+                    <div class="num">
+                      <div class="pic">
+                        <img src="./img/ashley.png" alt="">
+                      </div>
+                      
+                    </div>
+                    <div class="num">
+                      <div class="pic">
+                        <img src="./img/vipp.png" alt="">
+                      </div>
+                      
+                    </div>
+                    <div class="num">
+                      <div class="pic">
+                        <img src="./img/veronica.png" alt="">
+                      </div>
+                      
+                    </div>
+                    <div class="num">
+                      <div class="pic">
+                        <img src="./img/eastarjet.png" alt="">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p class="copy">Copyright &copy; 2024. Oh EunTeak, All rights reserved.</p>
+
+    </footer>
+  </div>
+</body>
+</html>
