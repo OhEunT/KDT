@@ -167,6 +167,12 @@ body{overflow: hidden;}
 #content #menu3 .menu_box a .back{color: #fff;}
 #content #menu3 .menu_box a .back:before{background-image: url('img/btn_back3.png');}
 
+#content #menu3 .list_box .work .pager{position: absolute; bottom: 0; left: 50%; z-index: 33;}
+#content #menu3 .list_box .work .pager ul{overflow: hidden;}
+#content #menu3 .list_box .work .pager ul li{float: left;}
+#content #menu3 .list_box .work .pager ul li + li{margin-left: 18px;}
+#content #menu3 .list_box .work .pager ul li a{display: block; width: 14px; height: 14px; text-indent: -9999px; background: #f6f7f8; border: 2px solid #111; border-radius: 20px;}
+#content #menu3 .list_box .work .pager ul li.on a{background: #111;}
 
 #content #menu3 .list_box .scroll_box{padding-top: 20px;}
 #content #menu3 .list_box .work{padding: 15px 0px;}
@@ -174,14 +180,17 @@ body{overflow: hidden;}
 
 
 
-#content #menu3 .list_box .work .pjt{width: 100%;}
-#content #menu3 .list_box .work .pjt .inner{ width: 100%;  display: flex; justify-content: space-between; flex-wrap: wrap;}
-#content #menu3 .list_box .work .pjt .inner .num{width: 50%; display: flex;}
-#content #menu3 .list_box .work .pjt .inner .num .pic{
+#content #menu3 .list_box .work .panel {width: 100%;}
+#content #menu3 .list_box .work .panel .work_01{ width: 100%;  display: flex; justify-content: space-between; flex-wrap: wrap;}
+#content #menu3 .list_box .work .panel .work_01 .num{width: 50%; display: flex;}
+#content #menu3 .list_box .work .panel .work_01 .num .pic{
     width: 100%;  padding: 10px;
 }
-#content #menu3 .list_box .work .pjt .inner .num .pic img{width: 100%;}
-#content #menu3 .list_box .work .pjt .inner .num .txt{width: 50%;}
+#content #menu3 .list_box .work .panel .work_01 .num .pic img{width: 100%;}
+
+#content #menu3 .list_box .work .panel .work_02{
+    display: flex; flex-direction: column; gap: 50px;
+}
 /* menu 예비 색상 */
 #content .menu:hover .menu_box{background: #333;}
 #content .menu.opening .menu_box{background: #333;}
