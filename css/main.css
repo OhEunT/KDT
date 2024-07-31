@@ -108,6 +108,7 @@ body{overflow: hidden;}
 #content #menu1 .list_box .profile .profile_box ul li ul{overflow: hidden;}
 #content #menu1 .list_box .profile .profile_box ul li ul li{float: left; color: #333; font-size: 16px; font-weight: bold; line-height: 27px;}
 #content #menu1 .list_box .profile .profile_box ul li ul li + li{margin-left: 30px;}
+#content #menu1 .list_box .profile .profile_box ul li a{font: bold 30px/1 "맑은 고딕";color: #333;}
 
 #content #menu1 .list_box .skills{margin-top: 60px;}
 #content #menu1 .list_box .skills ul{padding: 15px 20px;}
