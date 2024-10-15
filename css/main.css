@@ -150,6 +150,12 @@ body{overflow: hidden;}
 #content #menu2 .list_box .work .panel ul li .work_txt ul li.work_skill ul{overflow: hidden;}
 #content #menu2 .list_box .work .panel ul li .work_txt ul li.work_skill ul li{width: 100; color: #333; font-size: 16px; font-weight: bold;}
 #content #menu2 .list_box .work .panel ul li .work_txt ul li.work_desc{width: 70%;}
+#content #menu2 .list_box .work .panel ul li .work_txt ul li.work_desc a{
+    color: #333; font-size: 15px; 
+}
+#content #menu2 .list_box .scroll_box .work .panel li.on {
+    z-index: 33;
+}
 #content #menu2 .list_box .work .panel ul li .work_txt ul li.work_desc p{color: #333; font-size: 16px; line-height: 27px; font-weight: bold;}
 
 #content #menu2 .list_box .work .panel ul li .work_links{display: block; position: absolute; bottom: 45px; right: 20px;}
